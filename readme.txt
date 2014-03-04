@@ -26,6 +26,8 @@ if ( function_exists( 'webshare' ) ) {
 ?>
 `
 
+Add Twitter username in your profile page (called Twitter Username) if you want to show it when sharing to twitter.
+
 = Theme support =
 
 If you want to load Genericons and handle the CSS in your theme, add this code in your themes `functions.php`.
