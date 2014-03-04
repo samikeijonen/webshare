@@ -1,0 +1,52 @@
+# Copyright (C) 2014 WebShare
+# This file is distributed under the same license as the WebShare package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WebShare 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/webshare\n"
+"POT-Creation-Date: 2014-03-03 15:14:21+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-03-03 17:21+0200\n"
+"Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.6.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi\n"
+
+#: includes/functions.php:18
+msgid "Share:"
+msgstr "Jaa:"
+
+#: includes/functions.php:19
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/functions.php:20
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/functions.php:21
+msgid "Google+"
+msgstr "Google+"
+
+#. Plugin Name of the plugin/theme
+msgid "WebShare"
+msgstr "WebShare"
+
+#. Plugin URI of the plugin/theme
+msgid "https://foxnet-themes.fi/downloads/webshare"
+msgstr "https://foxnet-themes.fi/downloads/webshare"
+
+#. Description of the plugin/theme
+msgid "Adds social sharing links."
+msgstr "Lisää sosiaalisen median jakolinkit."
+
+#. Author of the plugin/theme
+msgid "Sami Keijonen"
+msgstr "Sami Keijonen"
+
+#. Author URI of the plugin/theme
+msgid "https://foxnet-themes.fi"
+msgstr "https://foxnet-themes.fi"

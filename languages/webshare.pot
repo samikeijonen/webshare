@@ -1,0 +1,48 @@
+# Copyright (C) 2014 WebShare
+# This file is distributed under the same license as the WebShare package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WebShare 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/webshare\n"
+"POT-Creation-Date: 2014-03-03 15:14:21+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/functions.php:18
+msgid "Share:"
+msgstr ""
+
+#: includes/functions.php:19
+msgid "Facebook"
+msgstr ""
+
+#: includes/functions.php:20
+msgid "Twitter"
+msgstr ""
+
+#: includes/functions.php:21
+msgid "Google+"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "WebShare"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://foxnet-themes.fi/downloads/webshare"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adds social sharing links."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Sami Keijonen"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://foxnet-themes.fi"
+msgstr ""
