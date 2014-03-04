@@ -14,6 +14,27 @@ Adds social sharing icons.
 
 Webshare is another social sharing plugin but it only displays sharing links with Genericon fonts. So it's lightweight.
 
+= Plugin usage =
+
+Add this code in your themes template file.
+
+`
+<?php 
+if ( function_exists( 'webshare' ) ) {
+	webshare(); // Sharing icons.
+}
+?>
+`
+
+= Theme support =
+
+If you want to load Genericons and handle the CSS in your theme, add this code in your themes `functions.php`.
+
+`
+/* Webshare plugin support. This means that theme handles the CSS already. */
+add_theme_support( 'webshare', array( 'styles' => true ) );
+`
+
 == Installation ==
 
 1. Upload `webshare` to the `/wp-content/plugins/` directory.
