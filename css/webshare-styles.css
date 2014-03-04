@@ -16,7 +16,6 @@
 #webshare-wrapper ul li  a::before {
 	display: inline-block;
 	content: '\f409';
-	color: #00b9b9;
 	padding: 0 5px 0 0;
 	-webkit-font-smoothing: antialiased;
 	font: normal 24px/0.9 'Genericons';
