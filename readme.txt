@@ -44,9 +44,14 @@ add_theme_support( 'webshare', array( 'styles' => true ) );
 
 == Frequently Asked Questions ==
 
-= Why was this plugin created? =
+= Is there any settings in this plugin? =
 
-I needed this feature and someone else might need it too.
+No. You can only add Twitter username in your profile page.
+
+= Does social sharing automatically appear after or before content? =
+
+Not at the moment. I think about adding social sharing after content.
+
 
 == Changelog ==
 
