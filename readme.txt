@@ -37,6 +37,11 @@ If you want to load Genericons and handle the CSS in your theme, add this code i
 add_theme_support( 'webshare', array( 'styles' => true ) );
 `
 
+= Demo =
+
+You can see the demo in [Mina olen demosite](http://foxnet-themes.fi/demo/mina-olen/template-sticky/ "Mina olen demo"). You can
+get Mina olen theme from [here](https://foxnet-themes.fi/downloads/mina-olen/ "Mina olen").
+
 == Installation ==
 
 1. Upload `webshare` to the `/wp-content/plugins/` directory.
