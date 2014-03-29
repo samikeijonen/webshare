@@ -11,7 +11,7 @@
 }
 #webshare-wrapper ul li {
 	display: inline-block;
-	margin-right: 8px;
+	margin: 0 8px 0 0;
 }
 #webshare-wrapper ul li  a::before {
 	display: inline-block;
