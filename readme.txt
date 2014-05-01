@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: social, sharing, genericons
 Requires at least: 3.8
 Tested up to: 3.9
-Stable tag: 1.1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,12 @@ Webshare is another social sharing plugin but it only displays sharing links wit
 
 = Plugin usage =
 
-When you activate the plugin social sharing appears after singular post.
+When you activate the plugin social sharing appears after singular post. You can drag and drop social icons in
+different order under Settings >> Webshare.
+
+[https://www.youtube.com/watch?v=EIEiXKO562k]
+
+There you can choose under which post types you want social icons to appear or do you want to disable some of them.
 
 Add Twitter username in your profile page (called Twitter Username) if you want to show it when sharing to twitter.
 
@@ -64,6 +69,18 @@ Not at the moment. I think about adding social sharing after content.
 1. Webshare after content
 
 == Changelog ==
+
+= 1.2 =
+
+* Setting page added under Settings >> Webshare.
+* You can now drag and drop social icons in the order you want.
+* You can disable social icons.
+* You can choose under which post types you want social icons to appear.
+* When you uninstall the plugin database settings are deleted.
+
+= 1.1.1 =
+
+Add screenshot.
 
 = 1.1 =
 
