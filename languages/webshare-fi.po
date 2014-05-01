@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WebShare 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/webshare\n"
-"POT-Creation-Date: 2014-03-04 15:26:18+00:00\n"
-"PO-Revision-Date: 2014-03-04 17:27+0200\n"
+"POT-Creation-Date: 2014-05-01 13:10:59+00:00\n"
+"PO-Revision-Date: 2014-05-01 16:12+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fi\n"
@@ -15,25 +15,57 @@ msgstr ""
 "X-Generator: Poedit 1.6.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: includes/functions.php:27
+#: admin/settings.php:16
+msgid "Webshare settings"
+msgstr "Webhare asetukset"
+
+#: admin/settings.php:16
+msgid "Webshare"
+msgstr "Webshare"
+
+#: admin/settings.php:74
+msgid "Webshare Settings"
+msgstr "Webshare asetukset"
+
+#: admin/settings.php:76
+msgid ""
+"Drag and drop social icons in the order you want them in the front end. "
+"After that setting is automatically saved."
+msgstr ""
+"Raahaa some-ikonit siihen järjestykseen, miten haluat niiden näkyvän "
+"sivuilla. Järjestys tallennetaan automaattisesti."
+
+#: admin/settings.php:81 includes/functions.php:56
 msgid "Share:"
 msgstr "Jaa:"
 
-#: includes/functions.php:28
+#: admin/settings.php:124
+msgid "Hide buttons on front end:"
+msgstr "Poista valitut käytöstä:"
+
+#: admin/settings.php:131 includes/functions.php:64
 msgid "Facebook"
 msgstr "Facebook"
 
-#: includes/functions.php:29
+#: admin/settings.php:134 includes/functions.php:67
 msgid "Twitter"
 msgstr "Twitter"
 
-#: includes/functions.php:30
+#: admin/settings.php:137 includes/functions.php:70
 msgid "Google+"
 msgstr "Google+"
 
-#: includes/functions.php:47
+#: admin/settings.php:150
+msgid "Show buttons on:"
+msgstr "Näytä painikkeet:"
+
+#: includes/functions.php:127
 msgid "Twitter Username"
 msgstr "Twitterin käyttäjänimi"
+
+#: webshare.php:238
+msgid "Settings"
+msgstr "Asetukset"
 
 #. Plugin Name of the plugin/theme
 msgid "WebShare"
