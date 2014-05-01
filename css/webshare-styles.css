@@ -14,12 +14,17 @@
 	display: inline-block;
 	margin: 0 8px 0 0;
 }
+#webshare-wrapper ul li a {
+	display: inline-block;
+}
 #webshare-wrapper ul li  a::before {
 	display: inline-block;
 	content: '\f409';
 	padding: 0 5px 0 0;
 	-webkit-font-smoothing: antialiased;
 	font: normal 24px/0.9 'Genericons';
+	width: 24px;
+	height: 24px;
 	vertical-align: middle;
 }
 #webshare-wrapper ul li  a.webshare-facebook::before {
