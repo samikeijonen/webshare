@@ -3,7 +3,7 @@
 * Plugin Name: WebShare
 * Plugin URI: https://foxnet-themes.fi/downloads/webshare
 * Description: Adds social sharing links.
-* Version: 1.1.1
+* Version: 1.2
 * Author: Sami Keijonen
 * Author URI: https://foxnet-themes.fi
 * Text Domain: webshare
@@ -17,7 +17,7 @@
 * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 *
 * @package WebShare
-* @version 1.1.1
+* @version 1.2
 * @author Sami Keijonen <sami.keijonen@foxnet.fi>
 * @copyright Copyright (c) 2014, Sami Keijonen
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -48,15 +48,27 @@ final class WEBSHARE {
 		
 		/* Set the constants needed by the plugin. */
 		add_action( 'plugins_loaded', array( $this, 'constants' ), 1 );
+		
+		/* Get Webshare settings. */
+		add_action( 'plugins_loaded', array( $this, 'settings' ), 2 );
 
 		/* Internationalize the text strings used. */
-		add_action( 'plugins_loaded', array( $this, 'i18n' ), 2 );
+		add_action( 'plugins_loaded', array( $this, 'i18n' ), 3 );
 
 		/* Load the functions files. */
-		add_action( 'plugins_loaded', array( $this, 'includes' ), 3 );
+		add_action( 'plugins_loaded', array( $this, 'includes' ), 4 );
 		
 		/* Enqueue scripts and styles. */
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		
+		/* Enqueue scripts and styles. */
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
+		
+		/* Register init functions. */
+		add_action( 'init', array( $this, 'init' ) );
+		
+		/* Register activation hook. */
+		register_activation_hook( __FILE__, array( $this, 'activation' ) );
 
 	}
 
@@ -78,8 +90,23 @@ final class WEBSHARE {
 		
 		/* Define Plugin Version. */
 		if ( ! defined( 'WEBSHARE_VERSION' ) ) {
-			define( 'WEBSHARE_VERSION', '1.1.1' );
+			define( 'WEBSHARE_VERSION', '1.2' );
 		}
+
+	}
+	
+	/**
+	* Get settings of the plugin.
+	*
+	* @since 1.2
+	*/
+	public function settings() {
+
+		/* Get webshare options. */
+		global $webshare_list;
+		$webshare_list = get_option( 'webshare_list' );
+		global $webshare_settings;
+		$webshare_settings = get_option( 'webshare_settings' );
 
 	}
 
@@ -108,6 +135,7 @@ final class WEBSHARE {
 
 		/* Load necessary files. */
 		require_once( WEBSHARE_INCLUDES . 'functions.php' );
+		require_once( WEBSHARE_DIR . 'admin/settings.php' );
 		
 	}
 	
@@ -143,6 +171,109 @@ final class WEBSHARE {
 			array( 'genericons' ),
 			WEBSHARE_VERSION
 		);
+		
+	}
+	
+	/**
+	* Load scripts for the setting page.
+	*
+	* @since  1.2
+	* @return void
+	*/
+	function enqueue_admin_scripts( $hook ) {
+	
+		/* Return if we are not on our setting page. */
+		global $webshare_settings_page;
+ 
+		if( $hook != $webshare_settings_page ) {
+			return;
+		}
+	
+		/* Load jquery sortable. */
+		wp_enqueue_script( 'jquery-ui-sortable' );
+	
+		/* Load update order js. */
+		wp_enqueue_script( 'webshare-update-order', plugin_dir_url(__FILE__) . 'admin/js/update-order.js' );
+	
+		/* Send this for nonce referer. */
+		wp_localize_script(
+			'webshare-update-order',
+			'webshare_ajax',
+			array(
+				'webshare_ajax_nonce' => wp_create_nonce( 'webshare_ajax_nonce' )
+			)
+		);
+	
+		/* Load admin styles. */
+		wp_enqueue_style( 'webshare-admin', plugin_dir_url(__FILE__) . 'admin/css/admin.css' );
+	
+		/* Load the Genericons styles. */
+		wp_enqueue_style(
+			'genericons',
+			plugin_dir_url( __FILE__ ) . "css/genericons/genericons.css",
+			null,
+			'3.0.3'
+		);
+	}
+	
+	/**
+	* Defines init functions used by the plugin.
+	*
+	* @since 1.0.0
+	*/
+	public function init() {
+		
+		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'webshare_settings_link' ) );
+
+	}
+	
+	/**
+	* Add Settings page to plugin action links in the Plugins table.
+	*
+	* @since  1.2
+	* @return string
+	*/
+	public static function webshare_settings_link( $links ) {
+
+		$webshare_setting_link = sprintf( '<a href="%s">%s</a>', add_query_arg( array( 'page' => 'webshare-options' ), admin_url( 'options-general.php' ) ), __( 'Settings', 'webshare' ) );
+		array_unshift( $links, $webshare_setting_link );
+		return $links;
+		
+	}
+	
+	/**
+	 * On plugin activation, save default order of the social sharing icons.
+	 *
+	 * @since  1.2
+	 * @access public
+	 * @return void
+	 */
+	function activation() {
+		
+		/* Get webshare list and options. */
+		$webshare_list = get_option( 'webshare_list' );
+		$webshare_settings = get_option( 'webshare_settings' );
+		
+		/* If no options yet set it as array. */
+		if ( !isset( $webshare_list ) || !is_array( $webshare_list ) ) {
+		
+			/* Defaults. */
+			$webshare_list = array( 'Facebook', 'Twitter', 'Google' );
+			add_option( 'webshare_list', $webshare_list );
+		
+		}
+		
+		/* If no options yet set it as array. */
+		if ( !isset( $webshare_settings ) || !is_array( $webshare_settings ) ) {
+		
+			/* Defaults. */
+			$webshare_settings = array(
+				'webshare_hide' => array(),
+				'webshare_show' => array( 'post' )
+			);
+			add_option( 'webshare_settings', $webshare_settings );
+		
+		}
 		
 	}
 	
