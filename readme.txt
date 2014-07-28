@@ -3,8 +3,8 @@ Contributors: sami.keijonen
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E65RCFVD3QGYU
 Tags: social, sharing, genericons
 Requires at least: 3.8
-Tested up to: 3.9
-Stable tag: 1.2
+Tested up to: 3.9.1
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ Webshare is another social sharing plugin but it only displays sharing links wit
 When you activate the plugin social sharing appears after singular post. You can drag and drop social icons in
 different order under Settings >> Webshare.
 
-[https://www.youtube.com/watch?v=EIEiXKO562k]
+[youtube https://www.youtube.com/watch?v=EIEiXKO562k]
 
 There you can choose under which post types you want social icons to appear or do you want to disable some of them.
 
@@ -69,6 +69,10 @@ Not at the moment. I think about adding social sharing after content.
 1. Webshare after content
 
 == Changelog ==
+
+= 1.2.1 =
+
+* Update Genericons to version 3.1.
 
 = 1.2 =
 
