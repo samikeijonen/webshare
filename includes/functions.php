@@ -61,10 +61,10 @@ function get_webshare() {
 	foreach( $webshare_list as $key => $item ) :
 				
 		if( 'Facebook' == $item && !in_array( 'Facebook', $webshare_what_to_hide ) ) {
-			$webshare_output .= '<li class="webshare-facebook"><a class="webshare-facebook" href="https://www.facebook.com/sharer.php?u=' . esc_url( get_permalink() ) . '&t=' . urlencode( get_the_title() ) . '" target="_blank" title="' . esc_attr( __( 'Facebook', 'webshare' ) ) . '"><span class="screen-reader-text webshare-link webshare-link-facebook">' . esc_attr( __( 'Facebook', 'webshare' ) ) . '</span></a></li>';
+			$webshare_output .= '<li class="webshare-facebook"><a class="webshare-facebook" href="https://www.facebook.com/sharer.php?u=' . esc_url( get_permalink() ) . '&t=' . urlencode( the_title_attribute( 'echo=0' ) ) . '" target="_blank" title="' . esc_attr( __( 'Facebook', 'webshare' ) ) . '"><span class="screen-reader-text webshare-link webshare-link-facebook">' . esc_attr( __( 'Facebook', 'webshare' ) ) . '</span></a></li>';
 		}
 		elseif( 'Twitter' == $item && !in_array( 'Twitter', $webshare_what_to_hide ) ) {
-			$webshare_output .= '<li class="webshare-twitter"><a class="webshare-twitter" href="https://twitter.com/intent/tweet?url=' . esc_url( get_permalink() ) . '&text=' . urlencode( get_the_title() ) . $via_twitter . '" target="_blank" title="' . esc_attr( __( 'Twitter', 'webshare' ) ) . '"><span class="screen-reader-text webshare-link webshare-link-twitter">' . esc_attr( __( 'Twitter', 'webshare' ) ) . '</span></a></li>';
+			$webshare_output .= '<li class="webshare-twitter"><a class="webshare-twitter" href="https://twitter.com/intent/tweet?url=' . esc_url( get_permalink() ) . '&text=' . urlencode( the_title_attribute( 'echo=0' ) ) . $via_twitter . '" target="_blank" title="' . esc_attr( __( 'Twitter', 'webshare' ) ) . '"><span class="screen-reader-text webshare-link webshare-link-twitter">' . esc_attr( __( 'Twitter', 'webshare' ) ) . '</span></a></li>';
 		}
 		elseif( 'Google' == $item && !in_array( 'Google', $webshare_what_to_hide ) ) {
 			$webshare_output .= '<li class="webshare-google"><a class="webshare-google" href="https://plus.google.com/share?url=' . esc_url( get_permalink() ) . '" target="_blank" title="' . esc_attr( __( 'Google+', 'webshare' ) ) . '"><span class="screen-reader-text webshare-link webshare-link-google">' . esc_attr( __( 'Google+', 'webshare' ) ) . '</span></a></li>';
