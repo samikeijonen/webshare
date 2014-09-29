@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: social, sharing, genericons
 Requires at least: 3.9
 Tested up to: 4.0
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,11 @@ Not at the moment. I think about adding social sharing after content.
 1. Webshare after content
 
 == Changelog ==
+
+= 1.2.4 =
+
+* Fix incorrect path to genericon CSS file.
+* Use the_title_attribute in title.
 
 = 1.2.3 =
 
