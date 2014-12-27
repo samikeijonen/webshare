@@ -2,94 +2,94 @@
 # This file is distributed under the same license as the WebShare package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WebShare 1.2.5\n"
+"Project-Id-Version: WebShare 1.2.4\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2014-05-01 13:10:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
-"Last-Translator: WP-Translations (http://wp-translations.org/)\n"
-"Language-Team: WP-Translations "
-"(http://www.transifex.com/projects/p/wp-translations/)\n"
-"X-Generator: grunt-wp-i18n 0.4.5\n"
+"PO-Revision-Date: 2014-12-27 23:16+0200\n"
+"Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
+"Language-Team: WP-Translations (http://www.transifex.com/projects/p/wp-"
+"translations/)\n"
+"X-Generator: Poedit 1.7.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: UNITED STATES\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-KeywordsList: "
-"__;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_"
-"x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: admin/settings.php:16
 msgid "Webshare settings"
-msgstr ""
+msgstr "Webshare podešavanja"
 
 #: admin/settings.php:16
 msgid "Webshare"
-msgstr ""
+msgstr "Webshare"
 
 #: admin/settings.php:74
 msgid "Webshare Settings"
-msgstr ""
+msgstr "Webshare podešavanja"
 
 #: admin/settings.php:76
 msgid ""
 "Drag and drop social icons in the order you want them in the front end. "
 "After that setting is automatically saved."
 msgstr ""
+"Prevucite i pozicionirajte ikonice redom koji želite na front end-u. Nakon "
+"toga, postavke se automatski čuvaju."
 
 #: admin/settings.php:81 includes/functions.php:56
 msgid "Share:"
-msgstr ""
+msgstr "Podeli"
 
 #: admin/settings.php:124
 msgid "Hide buttons on front end:"
-msgstr ""
+msgstr "Sakrij tastere na front end-u:"
 
 #: admin/settings.php:131 includes/functions.php:64
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: admin/settings.php:134 includes/functions.php:67
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: admin/settings.php:137 includes/functions.php:70
 msgid "Google+"
-msgstr ""
+msgstr "Google+"
 
 #: admin/settings.php:150
 msgid "Show buttons on:"
-msgstr ""
+msgstr "Prikaži tastere na:"
 
 #: includes/functions.php:127
 msgid "Twitter Username"
-msgstr ""
+msgstr "Twitter korisničko ime"
 
 #: webshare.php:238
 msgid "Settings"
-msgstr ""
+msgstr "Podešavanja"
 
 #. Plugin Name of the plugin/theme
 msgid "WebShare"
-msgstr ""
+msgstr "WebShare"
 
 #. Plugin URI of the plugin/theme
 msgid "https://foxland.fi/downloads/webshare"
-msgstr ""
+msgstr "https://foxland.fi/downloads/webshare"
 
 #. Description of the plugin/theme
 msgid "Adds social sharing links."
-msgstr ""
+msgstr "Dodaje linkove za deljenje na društvenim mrežama."
 
 #. Author of the plugin/theme
 msgid "Sami Keijonen"
-msgstr ""
+msgstr "Sami Keijonen"
 
 #. Author URI of the plugin/theme
 msgid "https://foxland.fi"
-msgstr ""
+msgstr "https://foxland.fi"
