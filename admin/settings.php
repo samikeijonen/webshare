@@ -58,7 +58,7 @@ add_action( 'wp_ajax_webshare_update_order', 'webshare_update_order' );
  * @return void
  */
 function webshare_register_settings() {
-	register_setting( 'webshare_settings_group', 'webshare_settings' );
+	register_setting( 'webshare_settings_group', 'webshare_settings', 'webshare_settings_sanitize' );
 }
 add_action( 'admin_init', 'webshare_register_settings' );
 
@@ -171,9 +171,9 @@ function webshare_options_page() {
 	echo ob_get_clean();
 }
 
-function webshare_settings_save( $input ) {
+function webshare_settings_sanitize( $input ) {
 
-	//$input['quantity'] = absint( $input['quantity'] );
+	$input['webshare_settings'] = sanitize_text_field( $input['webshare_settings'] );
     return $input;
 
 }
