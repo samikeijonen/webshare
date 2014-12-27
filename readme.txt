@@ -3,8 +3,8 @@ Contributors: sami.keijonen
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E65RCFVD3QGYU
 Tags: social, sharing, genericons
 Requires at least: 3.9
-Tested up to: 4.0
-Stable tag: 1.2.4
+Tested up to: 4.1
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,11 @@ Not at the moment. I think about adding social sharing after content.
 1. Webshare after content
 
 == Changelog ==
+
+= 1.2.5 =
+
+* Fix incorrect sanitize callback function.
+* Serbian language files added.
 
 = 1.2.4 =
 
