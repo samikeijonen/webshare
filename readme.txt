@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: social, sharing, genericons
 Requires at least: 3.9
 Tested up to: 4.1
-Stable tag: 1.2.5
+Stable tag: 1.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,8 +46,8 @@ if ( function_exists( 'webshare' ) ) {
 
 = Demo =
 
-You can see the demo in [Mina olen demosite](http://foxnet-themes.fi/demo/mina-olen/template-sticky/ "Mina olen demo"). You can
-get Mina olen theme from [here](https://foxnet-themes.fi/downloads/mina-olen/ "Mina olen").
+You can see the demo in [Mina olen demosite](https://foxland.fi/demo/minaolen/template-sticky/ "Mina olen demo"). You can
+get Mina olen theme from [here](https://foxland.fi/downloads/mina-olen/ "Mina olen").
 
 == Installation ==
 
@@ -69,6 +69,10 @@ Not at the moment. I think about adding social sharing after content.
 1. Webshare after content
 
 == Changelog ==
+
+= 1.2.6 =
+
+* Fix sanitize callback function, yes again.
 
 = 1.2.5 =
 
