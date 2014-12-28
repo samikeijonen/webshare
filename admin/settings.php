@@ -172,8 +172,11 @@ function webshare_options_page() {
 }
 
 function webshare_settings_sanitize( $input ) {
-
-	$input['webshare_settings'] = sanitize_text_field( $input['webshare_settings'] );
-    return $input;
+	
+	/* Sanitize arrays. */
+	$input['webshare_hide'] = array_map( 'sanitize_text_field', $input['webshare_hide'] );
+	$input['webshare_show'] = array_map( 'sanitize_text_field', $input['webshare_show'] );
+	
+	return $input;
 
 }
