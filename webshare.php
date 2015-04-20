@@ -3,7 +3,7 @@
 * Plugin Name: WebShare
 * Plugin URI: https://foxland.fi/downloads/webshare
 * Description: Adds social sharing links.
-* Version: 1.2.6
+* Version: 1.2.7
 * Author: Sami Keijonen
 * Author URI: https://foxland.fi
 * Text Domain: webshare
@@ -17,7 +17,7 @@
 * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 *
 * @package WebShare
-* @version 1.2.6
+* @version 1.2.7
 * @author Sami Keijonen <sami.keijonen@foxnet.fi>
 * @copyright Copyright (c) 2014, Sami Keijonen
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -90,7 +90,7 @@ final class WEBSHARE {
 		
 		/* Define Plugin Version. */
 		if ( ! defined( 'WEBSHARE_VERSION' ) ) {
-			define( 'WEBSHARE_VERSION', '1.2.6' );
+			define( 'WEBSHARE_VERSION', '1.2.7' );
 		}
 
 	}
@@ -235,7 +235,7 @@ final class WEBSHARE {
 	*/
 	public static function webshare_settings_link( $links ) {
 
-		$webshare_setting_link = sprintf( '<a href="%s">%s</a>', add_query_arg( array( 'page' => 'webshare-options' ), admin_url( 'options-general.php' ) ), __( 'Settings', 'webshare' ) );
+		$webshare_setting_link = sprintf( '<a href="%s">%s</a>', esc_url( add_query_arg( array( 'page' => 'webshare-options' ), admin_url( 'options-general.php' ) ) ), __( 'Settings', 'webshare' ) );
 		array_unshift( $links, $webshare_setting_link );
 		return $links;
 		
