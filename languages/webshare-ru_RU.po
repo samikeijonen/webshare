@@ -1,0 +1,97 @@
+# Copyright (C) 2015 Sami Keijonen
+# This file is distributed under the same license as the WebShare package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WebShare 1.2.7\n"
+"Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
+"POT-Creation-Date: 2014-05-01 13:10:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-05-22 01:34+0200\n"
+"Language-Team: WP-Translations (http://www.transifex.com/projects/p/wp-"
+"translations/)\n"
+"X-Generator: Poedit 2.0.7\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"Last-Translator: Tor-Bjorn Fjellner\n"
+"Language: ru_RU\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/settings.php:16
+msgid "Webshare settings"
+msgstr "Настройки для Webshare"
+
+#: admin/settings.php:16
+msgid "Webshare"
+msgstr "Webshare"
+
+#: admin/settings.php:74
+msgid "Webshare Settings"
+msgstr "Настройки для Webshare"
+
+#: admin/settings.php:76
+msgid ""
+"Drag and drop social icons in the order you want them in the front end. "
+"After that setting is automatically saved."
+msgstr ""
+"Перетащите иконки социальных сетей в том порядке, в котором вы хотите "
+"их показывать в передней части. После этого параметр автоматически "
+"сохраняется."
+
+#: admin/settings.php:81 includes/functions.php:56
+msgid "Share:"
+msgstr "Поделиться:"
+
+#: admin/settings.php:124
+msgid "Hide buttons on front end:"
+msgstr "Скрыть кнопки на передней части:"
+
+#: admin/settings.php:131 includes/functions.php:64
+msgid "Facebook"
+msgstr "Facebook"
+
+#: admin/settings.php:134 includes/functions.php:67
+msgid "Twitter"
+msgstr "Twitter"
+
+#: admin/settings.php:137 includes/functions.php:70
+msgid "Google+"
+msgstr "Google+"
+
+#: admin/settings.php:150
+msgid "Show buttons on:"
+msgstr "Где отображать кнопки:"
+
+#: includes/functions.php:127
+msgid "Twitter Username"
+msgstr "Имя пользователя Twitter"
+
+#: webshare.php:238
+msgid "Settings"
+msgstr "Настройки"
+
+#. Plugin Name of the plugin/theme
+msgid "WebShare"
+msgstr "WebShare"
+
+#. Plugin URI of the plugin/theme
+msgid "https://foxland.fi/downloads/webshare"
+msgstr "HTTPS://foxland.Fi/downloads/WebShare"
+
+#. Description of the plugin/theme
+msgid "Adds social sharing links."
+msgstr "Добавляет ссылки для социального обмена"
+
+#. Author of the plugin/theme
+msgid "Sami Keijonen"
+msgstr "Сами Кейонен"
+
+#. Author URI of the plugin/theme
+msgid "https://foxland.fi"
+msgstr "https://foxland.fi"
